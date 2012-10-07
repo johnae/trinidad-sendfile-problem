@@ -1,0 +1,7 @@
+<h1>Showing some image files</h1>
+
+<% @files.each do |file| %>
+  An image using send_file
+  <%= image_tag("/tests/#{file}") %>
+  <br/>
+<% end %>
